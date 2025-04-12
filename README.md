@@ -46,8 +46,9 @@ This project focuses on building a personal cybersecurity lab using Ubuntu 22.04
 - Added user to `sudo` group for administrative access
 - Enabled EFI and configured NAT networking
 
-**📸 Screenshot: Terminal showing user creation**  
-![User Setup](images/user-setup.png)
+**📸 Screenshot: Terminal showing user creation**    
+![Ubuntu VM](https://i.imgur.com/WkTgEdl.png)
+
 
 ---
 
