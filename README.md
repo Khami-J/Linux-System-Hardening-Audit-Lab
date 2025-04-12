@@ -38,7 +38,7 @@ This project focuses on building a personal cybersecurity lab using Ubuntu 22.04
 - Installed Ubuntu 22.04.4 LTS from ISO
 
 **📸 Screenshot: VM Running Ubuntu**  
-
+![Ubuntu Desktop](Screenshot-ubuntu-desktop.png.png)
 
 #### 🧑‍💻 Step 2: System Configuration
 
