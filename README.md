@@ -53,8 +53,31 @@ This project focuses on building a personal cybersecurity lab using Ubuntu 22.04
 ---
 
 #### 🔐 Step 3: System Updates & Security Tools
+📸 Screenshot: System update and security tools installation
+![System Update History](https://i.imgur.com/bZgW3oC.png)
 
-```bash
-sudo apt update && sudo apt upgrade -y
-sudo apt-get dist-upgrade -y
+sudo apt update && sudo apt upgrade -y <br>
+sudo apt-get dist-upgrade -y <br>
 sudo apt install ufw fail2ban debsums unattended-upgrades -y
+
+
+---
+
+### 🧱 Step 4: Enable and Verify Security Tools
+📸 Screenshot: UFW status confirmation
+**📸 Screenshot: Enabling automatic security updates using unattended-upgrades**  
+![Unattended Upgrades Config](https://i.imgur.com/SxGgjog.png)
+
+
+In this step, I enabled the system firewall, verified its active status, and configured the system to install important security updates automatically using unattended-upgrades.
+
+These actions are foundational to securing Linux systems and are part of routine hardening steps used in IT support, sysadmin, and entry-level cybersecurity roles.
+
+---
+
+**🔧 Commands Used:**
+
+sudo ufw enable
+sudo ufw status verbose
+sudo apt install unattended-upgrades -y
+sudo dpkg-reconfigure --priority=low unattended-upgrades
