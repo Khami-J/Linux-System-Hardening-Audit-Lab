@@ -97,4 +97,16 @@ To assess the security posture of my Ubuntu lab system, I used **Lynis**, a powe
 sudo apt install lynis -y <br>
 sudo lynis audit system
 
+--
+
+### 🛠️ Remediation Step: Adding a Malware Scanner (ClamAV)
+📸 Screenshot: Malware Scanner Install  
+![Malware Scanner](https://i.imgur.com/J3S1pfc.png)
+After reviewing the Lynis audit results, I noticed that no malware scanner was installed. To fix this and improve system hardening, I installed and configured **ClamAV**, an open-source antivirus engine for Linux.
+
+**Commands Used:**
+
+sudo apt install clamav clamav-daemon -y <br>
+sudo systemctl start clamav-freshclam <br>
+sudo systemctl enable clamav-freshclam
 
