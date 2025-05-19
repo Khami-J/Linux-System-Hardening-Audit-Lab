@@ -64,7 +64,6 @@ sudo apt install ufw fail2ban debsums unattended-upgrades -y
 ---
 
 ### 🧱 Step 4: Enable and Verify Security Tools
-📸 Screenshot: UFW status confirmation
 **📸 Screenshot: Enabling automatic security updates using unattended-upgrades**  
 ![Unattended Upgrades Config](https://i.imgur.com/SxGgjog.png)
 
@@ -81,3 +80,19 @@ sudo ufw enable
 sudo ufw status verbose
 sudo apt install unattended-upgrades -y
 sudo dpkg-reconfigure --priority=low unattended-upgrades
+
+---
+
+### 🧪 Step 5: System Security Audit with Lynis
+📸 Screenshot: Lynus Audit Results  
+![Lynus Audit](https://i.imgur.com/Y1e2cv6.png)
+To assess the security posture of my Ubuntu lab system, I used **Lynis**, a powerful Linux auditing tool. Lynis checks for vulnerabilities, misconfigurations, and missing hardening best practices.
+
+---
+
+**🔧 Commands Used:**
+
+```bash
+sudo apt install lynis -y
+sudo lynis audit system
+
