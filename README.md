@@ -56,6 +56,8 @@ This project focuses on building a personal cybersecurity lab using Ubuntu 22.04
 📸 Screenshot: System update and security tools installation
 ![System Update History](https://i.imgur.com/bZgW3oC.png)
 
+**🔧 Commands Used:**
+
 sudo apt update && sudo apt upgrade -y <br>
 sudo apt-get dist-upgrade -y <br>
 sudo apt install ufw fail2ban debsums unattended-upgrades -y
@@ -76,9 +78,9 @@ These actions are foundational to securing Linux systems and are part of routine
 
 **🔧 Commands Used:**
 
-sudo ufw enable
-sudo ufw status verbose
-sudo apt install unattended-upgrades -y
+sudo ufw enable <br>
+sudo ufw status verbose <br>
+sudo apt install unattended-upgrades -y <br>
 sudo dpkg-reconfigure --priority=low unattended-upgrades
 
 ---
@@ -92,7 +94,7 @@ To assess the security posture of my Ubuntu lab system, I used **Lynis**, a powe
 
 **🔧 Commands Used:**
 
-```bash
-sudo apt install lynis -y
+sudo apt install lynis -y <br>
 sudo lynis audit system
+
 
